@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GPA Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Semester GPA Calculator</h1>
+    <form id="gpaForm">
+
+      <!-- Medical Electronics -->
+      <div class="subject">
+        <h2>Medical Electronics</h2>
+        <label>ICQ (%): <input type="number" name="medical_electronics_icq" /></label>
+        <label>Theory Test (%): <input type="number" name="medical_electronics_theory" /></label>
+        <label>Assignment (%): <input type="number" name="medical_electronics_assign" /></label>
+        <label>Project (%): <input type="number" name="medical_electronics_project" /></label>
+        <label>Class Participation (%): <input type="number" name="medical_electronics_part" /></label>
+      </div>
+
+      <!-- Engineering Mathematics 3 -->
+      <div class="subject">
+        <h2>Engineering Mathematics 3</h2>
+        <label>ICQ (%): <input type="number" name="engineering_mathematics_3_icq" /></label>
+        <label>Assignment (%): <input type="number" name="engineering_mathematics_3_assign" /></label>
+        <label>Term Test (%): <input type="number" name="engineering_mathematics_3_term" /></label>
+        <label>Online Test (%): <input type="number" name="engineering_mathematics_3_online" /></label>
+        <label>Class Participation (%): <input type="number" name="engineering_mathematics_3_part" /></label>
+        <label>Semestral Exam (%): <input type="number" name="engineering_mathematics_3_exam" /></label>
+      </div>
+
+      <!-- Microcontroller Applications -->
+      <div class="subject">
+        <h2>Microcontroller Applications</h2>
+        <label>Class Participation (%): <input type="number" name="microcontroller_applications_part" /></label>
+        <label>Online Test (%): <input type="number" name="microcontroller_applications_online" /></label>
+        <label>Practical Test (%): <input type="number" name="microcontroller_applications_practical" /></label>
+        <label>Project (%): <input type="number" name="microcontroller_applications_project" /></label>
+      </div>
+
+      <!-- Human Anatomy and Physiology -->
+      <div class="subject">
+        <h2>Human Anatomy and Physiology</h2>
+        <label>ICQ (%): <input type="number" name="human_anatomy_and_physiology_icq" /></label>
+        <label>Practical Test (%): <input type="number" name="human_anatomy_and_physiology_practical" /></label>
+        <label>Online Theory Test 1 (%): <input type="number" name="human_anatomy_and_physiology_theory1" /></label>
+        <label>Online Theory Test 2 (%): <input type="number" name="human_anatomy_and_physiology_theory2" /></label>
+        <label>Assignment (%): <input type="number" name="human_anatomy_and_physiology_assign" /></label>
+        <label>Class Participation (%): <input type="number" name="human_anatomy_and_physiology_part" /></label>
+      </div>
+
+      <!-- Effective Communication -->
+      <div class="subject">
+        <h2>Effective Communication</h2>
+        <label>E-learning (%): <input type="number" name="effective_communication_elearning" /></label>
+        <label>PROM (%): <input type="number" name="effective_communication_prom" /></label>
+        <label>Article (%): <input type="number" name="effective_communication_article" /></label>
+        <label>Seminar Presentation (%): <input type="number" name="effective_communication_seminar" /></label>
+        <label>Class Participation (%): <input type="number" name="effective_communication_part" /></label>
+      </div>
+
+      <button type="button" onclick="calculateGPA()">Calculate</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
